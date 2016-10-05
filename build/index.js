@@ -11,6 +11,7 @@ const SCRIPTS = join(RESOURCE, 'variants')
 const PUGSOURCE = readFileSync(join(RESOURCE, 'model.pug'))
 const ENCODING = {encoding: 'utf8'}
 
+require('coffeescript/register')
 const scripts = readdirSync(SCRIPTS)
   .map(
     item =>
