@@ -39,6 +39,6 @@ function write (pretty, entry) {
     )
     .map(
       ([local, file, create]) =>
-        writeFileSync(file, create(local), ENCODING)
+        writeFileSync(file, create(local) + '\n', ENCODING)
     )
 }
